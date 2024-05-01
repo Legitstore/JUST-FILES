@@ -1,0 +1,124 @@
+HOT TO CREATE DJANGO PROJECT STEP BY STEP
+
+(1)CREATE A FOLDER
+(2)OPEN THE FOLDER INSIDE YOUR VSCODE
+(3)OPEN TERMINAL- NEW TERMINAL
+(4)TYPE IN (DJANGO-ADMIN STARTPROJECT DJANGOPROJECT then Enter 
+(5)TYPE IN (DJANGO-ADMIN STARTPROJECT NEWNAME Enter
+(6)CD NEWNAME Enter
+(7)PYTHON MANAGE.PY STARTAPP OTHERNEWNAMEAPP
+
+ PYTHON MANAGE.PY RUNSERVER Enter and click on the link below
+
+NOW INSIDE THE OTHERNEWNAMEAPP 
+(8)CLICK ON NEW FILE TO CREATE A (URLS.PY)
+INSIDE THE URLS.PY
+===========================================
+from django.urls import path
+from .import views
+
+
+urlpatterns = [
+    
+    path('', views.index, name='index')
+]
+===========================================
+(9)OPEN VIEWS AND TYPE 
+===========================================
+(from django.shortcuts import render,redirect
+from .models import *
+from django.contrib import messages
+
+# Create your views here.
+def index(request):
+    return render(request, "index.html")
+
+
+def index(request):
+    if request.method == 'POST':
+        fname = request.POST['firstname']
+        lname = request.POST['lastname']
+        phone = request.POST['phone']
+        savedata =newstudents(firstname=fname, lastname=lname, phone=phone)
+        savedata.save()
+        # messages.info(request, "Add Successfully")
+    return render(request, "index.html")
+===========================================
+(10)OPEN MODELS AND TYPE JUST THE WAY YOU NAMED YOUR HTML FORMS
+===========================================
+(from django.db import models
+
+# Create your models here.
+class newstudents(models.Model):
+    firstname = models.CharField(max_length=100)
+    lastname = models.CharField(max_length=60)
+    phone = models.CharField(max_length=60)
+===========================================
+
+(11)OPEN ADMIN AND TYPE 
+===========================================
+from django.contrib import admin
+from .models import *
+
+# Register your models here.
+class newstudents(admin.ModelAdmin):
+    list_display = ('firstname', 'lastname', 'phone')
+admin.site.register(newstudents, showstudents)
+===========================================
+(12)INSIDE THE OTHERNEWNAMEAPP CREATE A FOLDER (TEMPLATES)
+INSIDE THE TEMPLATES CREATE A NEW FILE (INDEX.HTML)
+
+(13)NOW INSIDE THE NEWNAME SECTION, CLICK ON URLS.PY AND ADD
+
+===========================================
+from django.contrib import admin
+from django.urls import path,include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    # NEW LINE 
+    path('', include('staffapp.urls')),
+]
+===========================================
+(14)AFTER THAT CLICK ON SETTINGS.PY YOU WILL FIND (INSTALLED_APP)
+NOW YOU WILL HAVE TO ADD THE NEWNAME UNDER IT 
+===========================================
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'newapp', THIS 
+]
+
+(15)GO BACK TO YOUR TERMINAL AND TYPE 
+PYTHON MANAGE.PY MAKEMIGRATIONS Enter
+
+(16)PYTHON MANAGE.PY MIGRATE Enter
+(17)PYTHON MANAGE.PY CREATESUPERUSER  Enter
+(18)ON THE PROMT CHOOSE YOUR USERNAME Eter
+(19NO EMAIL Enter
+(20)PASSWORD YOUR CHOICE
+(21)RE-ENTER SAME PASSWORD Enter
+(22)PYTHON MANAGE.PY RUNSERVER Enter
+(23) CLICK ON THE LINK UNDER IT 
+
+
+
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+
+
+
+
+
+
+
+
+
+
+

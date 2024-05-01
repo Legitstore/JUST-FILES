@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>banking system</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container-lg py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2 class="text-center">Bank system</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 ">
+                        <div class="bg-primary shadow text-white card p-3">
+                            <h2 class="">Total Deposits:</h2>
+                            <span id="deposited">$0.00</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 ">
+                        <div class="bg-danger shadow text-white card p-3">
+                            <h2 class="">Total Withdrawn:</h2>
+                            <span id="withdrawn">$0.00</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 ">
+                        <div class="bg-success shadow text-white card p-3 ">
+                            <h2 class="">Current Balance:</h2>
+                            <span id="balance">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-5">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="bg-white rounded shadow p-3">
+                            <div class="mb-3"> 
+                                <label for="name" class="m-2">Depositor's Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name">
+                              </div>
+                            <div class="mb-3">
+                                <label for="amount" class="m-2">Amount:</label>
+                                <input type="text" class="form-control" id="amount" placeholder="Enter amount">
+                            </div>
+                            <div>
+                                <input type="button" value="Deposit" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="bg-white rounded shadow p-3">
+                            <div class="mb-3"> 
+                                <label for="name" class="m-2">Withdrawal's Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name">
+                              </div>
+                            <div class="mb-3">
+                                <label for="amount" class="m-2">Amount:</label>
+                                <input type="text" class="form-control" id="amount" placeholder="Enter amount">
+                            </div>
+                            <div>
+                                <input type="button" value="Withdraw" class="btn btn-danger">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+
+
+
+<script>
+    // Function to handle deposit
+    function deposit() {
+        var depositedAmount = parseFloat(document.getElementById('amount').value);
+        var currentBalance = parseFloat(document.getElementById('balance').innerText.replace('$', ''));
+
+        // Update total deposits
+        var totalDeposits = parseFloat(document.getElementById('deposited').innerText.replace('$', ''));
+        totalDeposits += depositedAmount;
+        document.getElementById('deposited').innerText = "$" + totalDeposits.toFixed(2);
+
+        // Update current balance
+        currentBalance += depositedAmount;
+        document.getElementById('balance').innerText = "$" + currentBalance.toFixed(2);
+
+        // Clear input fields
+        document.getElementById('amount').value = "";
+    }
+
+    // Function to handle withdrawal
+    function withdraw() {
+        var withdrawnAmount = parseFloat(document.getElementById('amount').value);
+        var currentBalance = parseFloat(document.getElementById('balance').innerText.replace('$', ''));
+
+        // Check if withdrawal amount is greater than current balance
+        if (withdrawnAmount > currentBalance) {
+            alert("Insufficient balance");
+            return;
+        }
+
+        // Update total withdrawn
+        var totalWithdrawn = parseFloat(document.getElementById('withdrawn').innerText.replace('$', ''));
+        totalWithdrawn += withdrawnAmount;
+        document.getElementById('withdrawn').innerText = "$" + totalWithdrawn.toFixed(2);
+
+        // Update current balance
+        currentBalance -= withdrawnAmount;
+        document.getElementById('balance').innerText = "$" + currentBalance.toFixed(2);
+
+        // Clear input fields
+        document.getElementById('amount').value = "";
+    }
+
+    // Add event listeners to buttons
+    document.getElementById('depositBtn').addEventListener('click', deposit);
+    document.getElementById('withdrawBtn').addEventListener('click', withdraw);
+</script>

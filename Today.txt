@@ -1,0 +1,95 @@
+# urls.py
+
+from django.conf import settings
+from django.conf.urls.static import static
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('your_app.urls')),
+]
+
+# Only in development environment
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# settings.py
+
+import os
+
+# Media files (user-uploaded files)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+<!-- product_detail.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+</head>
+<body>
+    <div class="single-pro-image">
+        <img src="{{ product.image1.url }}" width="100%" id="MainImg">
+        <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="{{ product.image1.url }}" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+                <img src="{{ product.image2.url }}" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+                <img src="{{ product.image3.url }}" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+                <img src="{{ product.image4.url }}" width="100%" class="small-img">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const MainImg = document.getElementById('MainImg');
+        const smallimg = document.querySelectorAll('.small-img');
+
+        smallimg.forEach((img, index) => {
+            img.onclick = function() {
+                MainImg.src = this.src;
+            }
+        });
+    </script>
+</body>
+</html>
+
+# urls.py
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('product/<int:product_id>/', views.product_detail, name='product_detail'),
+]
+
+
+# views.py
+
+from django.shortcuts import render
+from .models import Product
+
+def product_detail(request, product_id):
+    product = Product.objects.get(pk=product_id)
+    return render(request, 'product_detail.html', {'product': product})
+
+# models.py
+
+from django.db import models
+
+class Product(models.Model):
+    name = models.CharField(max_length=100)
+    image1 = models.ImageField(upload_to='product_images')
+    image2 = models.ImageField(upload_to='product_images')
+    image3 = models.ImageField(upload_to='product_images')
+    image4 = models.ImageField(upload_to='product_images')

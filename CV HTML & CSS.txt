@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Working Cv | LegitBoss Muffy</title>
+
+    <!-- ---------- CUSTOMLINK ----------  -->
+    <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="cvmedia.css">
+
+    <!-- ---------- FONTAWESOME CDN LINK ----------  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="left">
+            <div class="left-side">
+                <div class="image"><img src="avatar_hat.jpg" alt=""> <label for="">LegitBoss Muffy</label></div>
+
+                <div class="category">
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fas fa-suitcase"></i></span>
+                            <span class="text">Web Developer</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fas fa-house"></i></span>
+                            <span class="text">Delta State, NG</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <span class="text">Legitbossmuffy@gmail.com</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fas fa-phone"></i></span>
+                            <span class="text">+234 90 2900-7156</span>
+                        </li>
+                    </ul>
+                    <div class="border"></div>
+                </div>
+
+               
+                <div class="skil category">
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fas fa-cog"></i></span>
+                            <span class="tex">Skills</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skills">
+                    <div class="skill_form">
+                        <p class="text">Ms Word</p>
+                        <div class="form">
+                            <p class="first">95%</p>
+                        </div>
+                    </div>
+
+                    <div class="skill_form">
+                        <p class="text">Adobe Photoshop</p>
+                        <div class="form">
+                            <p class="second">90%</p>
+                        </div>
+                    </div>
+
+                    <div class="skill_form">
+                        <p class="text">Web Design</p>
+                        <div class="form">
+                            <p class="third">80%</p>
+                        </div>
+                    </div>
+
+                    <div class="skill_form">
+                        <p class="text">Python</p>
+                        <div class="form">
+                            <p class="forth">60%</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="language skil category">
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fas fa-earth"></i></span>
+                            <span class="tex">Language</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skills lang">
+                    <div class="skill_form">
+                        <p class="text">English</p>
+                        <div class="form">
+                            <p class="first"></p>
+                        </div>
+                    </div>
+
+                    <div class="skill_form">
+                        <p class="text">Arabic</p>
+                        <div class="form">
+                            <p class="second"></p>
+                        </div>
+                    </div>
+
+                    <div class="skill_form">
+                        <p class="text">Spanish</p>
+                        <div class="form">
+                            <p class="third"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- --------------------- RIGHT SIDE SECTION ---------------------  -->
+        <div class="right">
+            <div class="right-side">
+                <div class="right_all">
+                    <div class="work">
+                        <div class="icon"><i class="fas fa-suitcase"></i></div>
+                        <h1>Work Experience</h1>
+                    </div>
+                    
+                    <div class="front">
+                        <h3>Front End Developer / NIIT.com</h3>
+    
+                        <div class="front_icon">
+                            <span class="icon"><i class="fas fa-calendar"></i></span>
+                            <span class="text">Jan 2023 - <p>Current</p></span>
+                        </div>
+    
+                        <small>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</small>
+                    </div>
+                    <div class="border"></div>
+                </div>
+
+                <div class="right_all">
+                    <div class="front">
+                        <h3>Web Developer / NIIT.com</h3>
+    
+                        <div class="front_icon">
+                            <span class="icon"><i class="fas fa-calendar"></i></span>
+                            <span class="text">Nov 2022 - <p>Current</p></span>
+                        </div>
+    
+                        <small>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</small>
+                    </div>
+                    <div class="border"></div>
+                </div>
+
+                <div class="right_all">
+                    <div class="front">
+                        <h3>Graphic Designer / NIIT.com</h3>
+    
+                        <div class="front_icon">
+                            <span class="icon"><i class="fas fa-calendar"></i></span>
+                            <span class="text">Aug 2022 - <p>Current</p></span>
+                        </div>
+    
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side right-two">
+                <div class="right_all">
+                    <div class="work">
+                        <div class="icon"><i class="fas fa-suitcase"></i></div>
+                        <h1>Education</h1>
+                    </div>
+                    
+                    <div class="front">
+                        <h3>NIIT.com</h3>
+    
+                        <div class="front_icon">
+                            <span class="icon"><i class="fas fa-calendar"></i></span>
+                            <span class="text">Forever</span>
+                        </div>
+    
+                        <small>Web Development! All I need to know in one place</small>
+    
+                    </div>
+                    <div class="border"></div>
+                </div>
+
+                <div class="right_all">
+                    
+                    <div class="front">
+                        <h3>University Of Toronto</h3>
+    
+                        <div class="front_icon">
+                            <span class="icon"><i class="fas fa-calendar"></i></span>
+                            <span class="text">2023 - <p>Current</p></p></span>
+                        </div>
+    
+                        <small>Master Degree</small>
+                    </div>
+                    <div class="border"></div>
+                </div>
+
+                <div class="right_all">
+                    
+                    <div class="front">
+                        <h3>Delta State University</h3>
+    
+                        <div class="front_icon">
+                            <span class="icon"><i class="fas fa-calendar"></i></span>
+                            <span class="text">2017 - 2022</span>
+                        </div>
+    
+                        <small>Bachelor Degree</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- --------------------- FOOTER  SECTION ---------------------   -->
+
+    <footer>
+        <div class="find">
+            <p>Find me on social media.</p>
+        </div>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+        <div class="few">
+            <p><i class="far fa-copyright"></i></p>
+            <label for="">2023 Designed by: LegitBoss <span>Muffy</span> </label>
+        </div>
+        <p>Powered by <a href="">w3.css</a></p>
+    </footer>
+    
+</body>
+</html>
+
+--------------------- CSS --------------------- 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: #eee;
+}
+main{
+    display: flex;
+    padding: 10px 13.8%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.left{
+    top: 70px;
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-self: flex-start;
+}
+.right{
+    top: 70px;
+    width: 66%;
+    height: 100%;
+    align-self: flex-start;
+    background: #fff;
+}
+
+/* --------------------- LEFT SIDE SECTION ---------------------  */
+
+.left-side{
+    background: #fff;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.23);
+}
+.right-side{
+    background: #fff;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.23);
+    padding: 10px 5%;
+    padding-bottom: 40px;
+}
+.image{
+    position: relative;
+}
+.image img{
+    width: 100%;
+}
+.image label{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 5% ;
+    color: #fff;
+}
+
+.category{
+    position: relative;
+    margin-top: -4px;
+}
+.category ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0px 5%;
+}
+.category ul li:hover{
+    background: #ccc;
+}
+.skil ul li:last-child{
+    background: none;
+}
+.category ul li span{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    
+    font-size: 13px;
+    font-weight: -100;
+    color: #757575;
+}
+.category ul li .icon{
+    width: 30px;
+}
+.border{
+    border-bottom: 1px solid #ccc;
+    margin: 3px 3%;
+}
+
+.skil{
+    padding: 10px 0 0;
+}
+.skil .tex{ 
+    font-size: 14px;
+    font-weight: bold;
+    color: #757575;
+}
+.skills{
+    padding: 0px 5%;
+}
+.skill_form .text{
+    padding: 15px 0;
+    font-size: 13px;
+    color: #757575;
+}
+.skill_form:first-child{
+    margin-top: -5px;
+}
+.skill_form p{
+    font-size: 10px;
+}
+.skill_form .form{
+    height: 15px;
+    width: 100%;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.first{
+    background: #009688;
+    height: 15px;
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.9;
+}
+.second{
+    background: #009688;
+    height: 15px;
+    width: 85%;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.9;
+}
+.third{
+    background: #009688;
+    height: 15px;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.9;
+}
+.forth{
+    background: #009688;
+    height: 15px;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.9;
+}
+.lang .form{
+    height: 20px;
+    width: 100%;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.lang .first{
+    background: #009688;
+    height: 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+.lang .second{
+    background: #009688;
+    height: 20px;
+    width: 50%;
+    border-radius: 10px;
+}
+.lang .third{
+    background: #009688;
+    height: 20px;
+    width: 20%;
+    border-radius: 10px;
+}
+
+/* --------------------- RIGHT SIDE SECTION ---------------------  */
+
+.work{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    color: #757575;
+}
+.work .icon{
+    width: 40px;
+    font-size: 25px;
+    color: #009688;
+}
+.work h1{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.front{
+    margin: 20px 0;
+}
+.front h3{
+    font-size: 15px;
+    font-weight: 600;
+    color: #757575;
+}
+.front .front_icon{
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+.front_icon span{
+    display: flex;
+    align-items: center;
+    color: #009688;
+    font-size: 14px;
+}
+
+.front_icon .icon{
+    width: 40px;
+}
+.front_icon p{
+    margin-left: 5px;
+    background: #009688;
+    color: #fff;
+    width: 60px;
+    height: 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.front small{
+    font-size: 12px;
+    color: #000;
+}
+.right-side .border{
+    border-bottom: 1px solid #ccc;
+    margin: 3px ;
+}
+
+.right-two{
+    margin-top: 10px;
+}
+.right-two p:nth-child(2){
+    display: none;
+}
+
+.right-two p:first-child{
+    display: flex;
+}
+
+/* ---------- FOOTER SECTION -----------  */
+footer{
+    margin-top: -45px;
+    padding: 20px 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #009688;
+    color: #fff;
+    font-size: 15px;
+}
+.find, .icon{
+    margin: 5px;
+}
+.few span{
+    color: #f67f48;
+    font-size: 18px;
+    font-weight: 600;
+}
+.icon{
+    color: #00bbff;
+}
+.icon i{
+    margin: 0 5px;
+}
+.few{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p a{
+    color: #fff;
+}
+
+
+/* ---------- MEDIA QUERRY -----------  */
+@media (max-width: 970px) {
+    main{
+        padding: 10px 3%;
+    }
+}
+@media (max-width: 600px) {
+    main{
+        display: block;
+    }
+    .left{
+        width: auto;
+    }
+    .right{
+        width: auto;
+        margin-top: 10px;
+    }
+    
+}

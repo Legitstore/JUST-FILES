@@ -1,0 +1,102 @@
+   
+ ============== DELETE================  
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <h4>Are your sure you want to delete ({{staffs}}) Records?</h4>
+    <input class="btn btn-outline-danger" type="submit" value="Delete" style=" width: 100%;">
+</form>
+
+--------------- HTML ---------------
+<a href="{% url 'delete-staff' staff.id %}" class="btn btn-outline-danger">Delete</a> 
+
+--------------- URLS ---------------
+path('delete_staff/<str:pk>', views.delete_staff, name='delete-staff'),
+
+--------------- VIEWS ---------------
+def delete_staff(request, pk):
+    staffs = ViewStaff.objects.get(id=pk)  
+    context = {'staffs': staffs}
+    if request.method == 'GET':
+        return render(request, 'events/delete_staff.html', context)
+    elif request.method == 'POST':
+        staffs.delete()
+        messages.success(request,  'The post has been deleted successfully.')
+        return redirect('view-staff')
+
+# def delete_staff(request, pk):
+#     staffs = ViewStaff.objects.get(id=pk)  
+#     if request.method == 'POST':
+#         staffs.delete()
+#         return redirect('view-staff')
+#     context = {'staffs': staffs}
+#     return render(request, 'events/delete_staff.html', context)
+
+
+
+
+
+
+============== UPDATE ================
+<form class="row g-3 needs-validation" validate method="POST">
+            {% csrf_token %}
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">First name</label>
+                {{form.firstname}}
+            </div>
+
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Last name</label>
+                {{form.lastname}}
+            </div>
+
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Staff Id</label>
+                {{form.staffno}}
+            </div>
+            <!-- ------------------------------------ -->
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Email</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    {{form.email}}
+                </div>
+            </div>
+            
+            
+</form>
+
+--------------- HTML WHERE YOU WANT TO UPDATE---------------
+<a href="{% url 'update-staff' staff.id %}" class="btn btn-outline-primary">Update</a>
+
+--------------- URLS ---------------
+path('update_staff/<str:pk>', views.update_staff, name='update-staff'),
+
+--------------- VIEWS ---------------
+
+def update_staff(request, pk):
+    staffs = ViewStaff.objects.get(id=pk)
+    form = ViewStaForm(instance=staffs)
+    context = {'form': form}
+    if request.method == 'GET':
+        return render(request, 'events/update_staff.html', context)
+    elif request.method == 'POST':
+        form = ViewStaForm(request.POST, instance=staffs)
+        if form.is_valid():
+            form.save()
+            messages.info(request, 'The post has been updated  successfully')
+            return redirect('view-staff')
+
+# def update_staff(request, pk):
+#     staffs = ViewStaff.objects.get(id=pk)
+#     form = ViewStaForm(instance=staffs)
+
+#     if request.method == 'POST':
+#         form = ViewStaForm(request.POST, instance=staffs)
+#         if form.is_valid():
+#             form.save()
+#             return redirect('view-staff')
+
+#     context = {'form': form}
+#     messages.info(request, 'Updated')
+#     return render(request, 'events/update_staff.html', context)

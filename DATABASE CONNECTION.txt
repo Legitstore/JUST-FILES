@@ -1,0 +1,19 @@
+connection = mysql.connector.connect(host='localhost', user='root', password='', port='3306', database='nittdatabase')
+c = connection.cursor()
+
+
+def insertData():
+    firstname = entry_firstname.get()
+    I’m lastname = entry_lastname.get()
+    email = entry_email.get()
+    age = entry_age.get()
+
+    insert_querry = "INSERT INTO `firstpythondatabase`(`Firstname`, `LastName`, `Email`, `age`) VALUES (%s, %s, %s, %s)"
+    vals = (firstname, lastname, email, age)
+    c.execute(insert_querry, vals)
+    connection.commit()
+
+
+
+cur.execute("INSERT INTO `loginform`(`Firstname`, `Lastname`, `Age`, `Gender`, `Email`, `Phone`) VALUES (%s, %s, %s, %s, %s, %s)",(id, first_name, last_name, age, gender, email, phone))
+con.commit()

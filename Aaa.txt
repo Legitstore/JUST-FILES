@@ -1,0 +1,86 @@
+# models.py
+from django.db import models
+
+class Transaction(models.Model):
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
+    transaction_type = models.CharField(max_length=10)  # 'deposit' or 'withdraw'
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+# views.py
+from django.shortcuts import render, redirect
+from .models import Transaction
+
+def home(request):
+    transactions = Transaction.objects.all()
+    deposit_total = sum(transaction.amount for transaction in transactions if transaction.transaction_type == 'deposit')
+    withdraw_total = sum(transaction.amount for transaction in transactions if transaction.transaction_type == 'withdraw')
+    balance = deposit_total - withdraw_total
+    return render(request, 'home.html', {'deposit_total': deposit_total, 'withdraw_total': withdraw_total, 'balance': balance})
+
+def deposit(request):
+    if request.method == 'POST':
+        amount = float(request.POST.get('amount'))
+        if amount > 0:
+            Transaction.objects.create(amount=amount, transaction_type='deposit')
+    return redirect('home')
+
+def withdraw(request):
+    if request.method == 'POST':
+        amount = float(request.POST.get('amount'))
+        transactions = Transaction.objects.all()
+        deposit_total = sum(transaction.amount for transaction in transactions if transaction.transaction_type == 'deposit')
+        withdraw_total = sum(transaction.amount for transaction in transactions if transaction.transaction_type == 'withdraw')
+        current_balance = deposit_total - withdraw_total
+        if amount > 0 and amount <= current_balance:
+            Transaction.objects.create(amount=amount, transaction_type='withdraw')
+    return redirect('home')
+
+def reset(request):
+    Transaction.objects.all().delete()
+    return redirect('home')
+
+# urls.py
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.home, name='home'),
+    path('deposit/', views.deposit, name='deposit'),
+    path('withdraw/', views.withdraw, name='withdraw'),
+    path('reset/', views.reset, name='reset'),
+]
+
+# home.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App</title>
+</head>
+<body>
+    <h1>Banking App</h1>
+    <h2>Deposit Total: {{ deposit_total }}</h2>
+    <h2>Withdraw Total: {{ withdraw_total }}</h2>
+    <h2>Balance: {{ balance }}</h2>
+    
+    <form action="{% url 'deposit' %}" method="post">
+        {% csrf_token %}
+        <label for="deposit-amount">Deposit Amount:</label>
+        <input type="number" id="deposit-amount" name="amount" step="0.01" required>
+        <button type="submit">Deposit</button>
+    </form>
+
+    <form action="{% url 'withdraw' %}" method="post">
+        {% csrf_token %}
+        <label for="withdraw-amount">Withdraw Amount:</label>
+        <input type="number" id="withdraw-amount" name="amount" step="0.01" required>
+        <button type="submit">Withdraw</button>
+    </form>
+
+    <form action="{% url 'reset' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Reset All</button>
+    </form>
+</body>
+</html>

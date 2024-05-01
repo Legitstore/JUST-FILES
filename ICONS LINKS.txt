@@ -1,0 +1,218 @@
+https://cdnjs.com/libraries/jquery/3.6.1
+		JQUERY LINK
+
+https://getbootstrap.com/docs/5.3/getting-started/download/
+			BOOSTAP LINK
+
+                                         FONTAWESOMEICONS
+ONLINE CLASS (https://www.javatpoint.com/)
+
+&#10010; plus
+&#169; copyright
+&#64; @
+&#8358; naira
+
+BOXICON HAS PNG ICON DOWNLOAD 
+
+/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/ (email)
+
+/^[^]+@[^]+\.[a-z]{2,3}$/
+
+ if(!phone.match(/^[0-9]{10}$/  (phone)
+
+svgicons.sparkk.fr=======
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+(ICONS FONTAWESOME LINK)
+https://fontawesome.com/search
+https://fontawesome.com/search?m=free&o=r
+
+(MY FONT AWESOME SCRIPT)
+<script src="https://kit.fontawesome.com/f377c30229.js" crossorigin="anonymous"></script> (online)
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+
+ <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/solid.min.js"> -->(offline) 
+
+ linear-gradient(135deg,#e94e94ca, #47c1e9)
+=======================================
+<i class="fas fa-long-arrow-alt-right"></i>
+<i id="bar" class="fas fa-outdent"></i> 
+<i class="fa-sharp fa-solid fa-naira-sign"></i>
+<i class="fas fa-check"></i>
+<i class="fas fa-code"></i>
+<i class="fas fa-external-link-alt"></i>
+<i class="fas fa-crop-alt"></i>
+<i class="fab fa-app-store"></i>
+<i class="fa-solid fa-house"></i>
+<i class="fa-sharp fa-solid fa-house"></i>
+<i class="fa-solid fa-eye-slash"></i>
+<i class="fas fa-envelope"></i>
+<i class="fa-sharp fa-solid fa-square-right"></i>
+<i class="fas fa-check-circle"></i>
+<i class="fa-solid fa-magnifying-glass"></i>
+<i class="fas fa-th-large"></i>
+<i class="fas fa-user"></i>
+<i class="fa-solid fa-gamepad"></i>
+<i class="fa-solid fa-user-group"></i>
+<i class="fa-solid fa-message-exclamation"></i>
+<i class="fa-solid fa-tv-music"></i>
+<i class="fa-solid fa-tachograph-digital"></i>
+<i class="fa-solid fa-user-friends"></i>
+<i class="fas fa-user-circle"></i>
+<i class="fas fa-comment-alt"></i> <i class="fa-solid fa-comment"></i>
+ <i class='fas fa-grid' id="big"></i>
+                    <i class="fa-sharp fa-solid fa-grid-round"></i>
+                    <i class="fa-solid fa-grid-2"></i>
+<i class="fa-sharp fa-solid fa-grid"></i>
+<i class="fa-solid fa-grid-round"></i>
+<i class="fa-solid fa-grid-round-4"></i>
+<i class="fa-solid fa-bars-sort"></i>
+<i class="fas fa-chart-pie"></i>
+<i class="fas fa-folder"></i>
+<i class="fa-solid fa-caret-down"></i>
+<i class="fas fa-hashtag"></i>
+<i class="fas fa-shopping-cart"></i>
+<i class="fas fa-heart"></i>32z
+<i class="fas fa-cog"></i> settings <i class="fa-regular fa-gear"></i>
+<i class="fas fa-bars"></i>
+<i class="fas fa-sign-out-alt"></i>
+<i class="fa-brands fa-windows"></i>
+<i class="fa-solid fa-gear"></i>
+<i class="fa-solid fa-lock"></i>
+<i class="fa-duotone fa-copy"></i>
+<i class="fa-solid fa-copy"></i>
+<i class="fa-solid fa-folders"></i>
+<i class="fa-solid fa-paste"></i>
+<i class="fa-solid fa-plus"></i>
+<i class="fa-brands fa-google"></i>
+<i class="fa-brands fa-whatsapp"></i>
+<i class="fa-brands fa-square-whatsapp"></i>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-solid fa-house-chimney-user"></i>   HOUSE
+<i class="fas fa-ellipsis-v"></i> ...|
+<i class="fas fa-ellipsis-h"></i> ...
+<i class="fab fa-instagram"></i>
+<i class="fab fa-tiktok"></i>
+<i class="fa-regular fa-location-dot"></i>
+<i class="fa-brands fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-snapchat"></i>
+<i class="fab fa-pinterest"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-linkedin"></i>
+<i class="fa-brands fa-cc-paypal"></i>
+<i class="fa-brands fa-cc-amex"></i>
+<i class="fa-brands fa-cc-mastercard"></i>
+<i class="fa-duotone fa-credit-card"></i>
+<i class="fa-regular fa-credit-card"></i>
+
+<i class="fas fa-question"></i>
+
+<i class="fa-brands fa-squarespace"></i>
+<i class="fa-solid fa-house-user"></i>  <i class="fa-thin fa-house"></i>
+<i class="fa-solid fa-comment-dots"></i>
+
+<i class="fa-solid fa-box-open"></i>
+<i class="fa-solid fa-chart-pie"></i>
+<i class="fa-solid fa-screwdriver-wrench"></i>
+<i class="fa-solid fa-camera"></i>
+ <i class="fas fa-arrow-left"></i>
+<i class="far fa-heart"></i>
+<i class="fas fa-calendar"></i>
+
+<i class="fas fa-calendar-check"></i>
+        
+"Submit  &#x27F6;"
+===================PNG ICONS LINK==================
+https://www.flaticon.com/
+
+
+======================BOXICON================
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> (offline) https://boxicons.com/?query=
+<i class='bx bx-menu-alt-left'></i>
+<i class='bx bx-chat'></i>
+<i class='bx bxl-c-plus-plus'></i>
+<i class='bx bx-search' ></i>
+<i class='bx bx-grid-alt'></i>
+<i class='bx bx-user'></i>
+<i class='bx bx-pie-chart-alt-2'></i>
+<i class='bx bx-folder'></i>
+<i class='bx bx-cart-alt'></i>
+<i class='bx bx-heart' ></i>
+<i class='bx bx-cog' ></i>
+<i class='bx bx-menu'></i>
+<i class='bx bx-log-out'></i>
+<i class='bx bx-hash'></i>
+<i class='bx bx-user'></i>
+<i class="bx bx-caret-right">
+<i class="bx bx-caret-down">
+<i class='bx bx-handicap'></i> ♿ 
+<i class="bx bx-tv"></i>
+<i class="bx bx-wifi"></i>
+<i class="bx bx-shower"></i>
+<i class="bx bxs-thermometer"></i>
+
+<i class="bx bx-map-pin"></i>
+<i class="bx bx-phone"></i>
+<i class="bx bx-envelope"></i>
+<i class="bx bx-credit-card"></i>
+<i class="bx bx-credit-card"></i
+<i class='bx bx-border-all'></i>>
+<i class='bx bxs-cart-alt'></i>
+<i class='bx bx-chevrons-right'></i>
+<i class='bx bx-chevrons-left'></i>
+<i class='bx bx-map-pin'></i>
+<i class='bx bx-map'></i>
+
+<i class="bx bxl-facebook"></i> 
+<i class="bx bxl-instagram"></i> 
+<i class="bx bxl-snapchat"></i> 
+<i class="bx bxl-pinterest"></i> 
+<i class="bx bxl-twitter"></i> 
+<i class="bx bxl-linkedin"></i> 
+=========================IONICONS================
+https://ionic.io/ionicons LINK
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+(online) BEFOR BODY END
+
+<ion-icon name="home"></ion-icon>
+<ion-icon name="planet"></ion-icon>
+<ion-icon name="mail-open"></ion-icon>
+<ion-icon name="menu"></ion-icon>
+<ion-icon name="person"></ion-icon>
+<ion-icon name="search"></ion-icon>
+<ion-icon name="chatbubbles"></ion-icon> 
+
+<ion-icon name="mail"></ion-icon>
+<ion-icon name="mail-unread"></ion-icon>
+<ion-icon name="text"></ion-icon>
+
+<ion-icon name="eye-off-outline"></ion-icon>
+<ion-icon name="eye-outline"></ion-icon>
+<ion-icon name="chatbubble-outline"></ion-icon>
+<ion-icon name="camera-outline"></ion-icon>
+<ion-icon name="settings-outline"></ion-icon>
+<ion-icon name="person-outline"></ion-icon>
+=============================
+==============NICE ANIMATION OF THE FIRST DIV===========
+.navbar:hover{
+    animation: animate 0.5s linear infinite;
+}
+@keyframes animate{
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+=========================BOOSTRAP============
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+<i class="bi bi-eye"></i>

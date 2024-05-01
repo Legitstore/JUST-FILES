@@ -1,0 +1,20 @@
+use unibendatabe;
+insert into tblstudents(regno,firstname,lastname,gender,course,score,status)VALUES('1002','Rita','Okoro','F','Business','80','Admitted')
+
+
+DELETE FROM tblstudents WHERE RegNo= '1001';
+
+UPDATE tblstudents SET FirstName= 'current name' a a WHERE RegNo='1002'
+
+
+use nittdatabase;
+CREATE TABLE login_form(
+    id int NOT null AUTO_INCREMENT,
+    Firstname varchar(200),
+    Lastname varchar(200),
+    Age INT(200),
+    Gender varchar(200),
+    Email varchar(200),
+    Phone INT(200),
+    PRIMARY KEY (id)
+);

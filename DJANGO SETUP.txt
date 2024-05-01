@@ -1,0 +1,116 @@
+========== VIEWS ==========
+from django.shortcuts import render,redirect
+from .models import *
+from django.contrib import messages
+
+# Create your views here.
+
+def home(request):
+    return if(requests,"home.html")
+
+def viewlist(request):
+    viewlist = tblstudents.objects.all()
+    context ={
+            'viewlist' : viewlist
+        }
+    return render(request,"viewlist.html",context)
+
+def users(request):
+    vuser = tbllogin.objects.all()
+    context ={
+            'users' : users
+        }
+    return render(request,"users.html",context)
+
+
+def index(request):
+    if request.method == 'POST':
+        fname = request.POST['firstname']
+        lname = request.POST['lastname']
+        phone = request.POST['phone']
+        savedata =tblstudents(firstname=fname, lastname=lname, phone=phone)
+        savedata.save()
+        messages.info(request, "Add Successfully")
+    return render(request, "index.html")
+
+
+========== URLS ==========
+from django.urls import path
+from .import views
+
+
+urlpatterns = [
+    path('', views.users, name='users'),
+    path('home', views.home, name='home'),
+    path('index', views.index, name='index'),
+    path('viewlist', views.viewlist, name='viewlist')
+]
+
+========== MODELS ==========
+from django.db import models
+
+# Create your models here.
+class tblstudents(models.Model):
+    firstname = models.CharField(max_length=100)
+    lastname = models.CharField(max_length=60)
+    phone = models.CharField(max_length=60)
+
+class tbllogin(models.Model):
+    username = models.CharField(max_length=100)
+    password = models.CharField(max_length=60)
+    staffname = models.CharField(max_length=60)
+
+
+========== ADMIN ==========
+
+from django.contrib import admin
+from .models import *
+
+# Register your models here.
+class showstudents(admin.ModelAdmin):
+    list_display = ('firstname', 'lastname', 'phone')
+admin.site.register(tblstudents, showstudents)
+
+
+class showlogin(admin.ModelAdmin):
+    list_display = ('username', 'password', 'staffname')
+admin.site.register(tbllogin, showlogin)
+
+
+========== PROJECT URLS ==========
+from django.contrib import admin
+from django.urls import path,include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    # NEW LINE 
+    path('', include('staffapp.urls')),
+]
+========== PROJECT SETTINGS ==========
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'staffapp',
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
